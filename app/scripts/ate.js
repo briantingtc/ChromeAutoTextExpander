@@ -346,6 +346,7 @@ jQuery.noConflict();
       autotext,
       cursorPosition
     );
+    textInput.dispatchEvent(new Event('input', { bubbles: true }))
     setCursorPosition(textInput, cursorPosition - shortcut.length + autotext.length);
   }
 
