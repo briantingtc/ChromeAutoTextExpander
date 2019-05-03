@@ -346,6 +346,13 @@ jQuery.noConflict();
       autotext,
       cursorPosition
     );
+
+    //mock and dispatch dom event when replacing text in input
+    textInput.dispatchEvent(new Event('input', {
+      'bubbles': true,
+      'cancelable': true
+    }))
+
     setCursorPosition(textInput, cursorPosition - shortcut.length + autotext.length);
   }
 
