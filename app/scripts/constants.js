@@ -18,5 +18,5 @@ var SHORTCUT_PREFIX = '@'             // Prefix to distinguish shortcuts vs meta
   , APP_BACKUP_TIMESTAMP_KEY = 'autoTextExpanderBackupTimestamp' // Local backup timestamp
   , APP_EMERGENCY_BACKUP_KEY = 'autoTextExpanderEmergencyBackup' // Emergency local backup
   , APP_ID_PRODUCTION = 'iibninhmiggehlcdolcilmhacighjamp'
-  , DEBUG = (chrome.i18n.getMessage('@@extension_id') !== APP_ID_PRODUCTION)
+  , DEBUG = false
 ;
